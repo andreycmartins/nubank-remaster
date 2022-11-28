@@ -1,13 +1,13 @@
-@import url(partials/_animations.scss);
-@import url(partials/_buttons.scss);
 @import url(partials/_colors.scss);
-@import url(partials/_footer.scss);
-@import url(partials/_icons.scss);
 @import url(partials/_layout.scss);
-@import url(partials/_menu.scss);
-@import url(partials/_spacing.scss);
-@import url(partials/_swipper.scss);
 @import url(partials/_typography.scss);
+@import url(partials/_buttons.scss);
+@import url(partials/_spacing.scss);
+@import url(partials/_menu.scss);
+@import url(partials/_swipper.scss);
+@import url(partials/_icons.scss);
+@import url(partials/_footer.scss);
+@import url(partials/_animations.scss);
 *,
 *::after,
 *::before {
@@ -26,4 +26,14 @@ body {
   position: relative;
   scroll-behavior: smooth;
   background-color: #1a1a1a;
+}
+
+svg,
+img {
+  display: block;
+  width: 100%;
+}
+
+.border {
+  border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
