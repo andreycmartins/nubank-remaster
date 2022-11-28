@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url(partials/_animations.scss);
+@import url(partials/_buttons.scss);
+@import url(partials/_colors.scss);
+@import url(partials/_footer.scss);
+@import url(partials/_icons.scss);
+@import url(partials/_layout.scss);
+@import url(partials/_menu.scss);
+@import url(partials/_spacing.scss);
+@import url(partials/_swipper.scss);
+@import url(partials/_typography.scss);
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  scroll-behavior: smooth;
+  background-color: #1a1a1a;
+}
