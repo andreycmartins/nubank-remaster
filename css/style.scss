@@ -25,6 +25,12 @@ body {
   background-color: #1a1a1a;
 }
 
+@media screen and (max-width: 960px) {
+  body {
+    background-color: blue;
+  }
+}
+
 svg,
 img {
   display: block;
@@ -32,7 +38,7 @@ img {
 }
 
 .border {
-    border: 1px solid red
+  border: 1px solid red;
 }
 
 @import url(partials/_menu.scss);
