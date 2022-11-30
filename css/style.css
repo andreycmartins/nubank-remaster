@@ -17,11 +17,6 @@ body {
   scroll-behavior: smooth;
   background-color: #1a1a1a;
 }
-@media screen and (max-width: 960px) {
-  body {
-    background-color: red;
-  }
-}
 
 svg,
 img {
