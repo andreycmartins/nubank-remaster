@@ -1,0 +1,24 @@
+a {
+  @include typeface-2(p2, desktop);
+  text-decoration: none;
+  color: $black-normal;
+  transition: 0.5s ease;
+
+  &:hover {
+    opacity: 0.9s;
+  }
+}
+
+.btn {
+  background: linear-gradient(220.94deg, #a950c4 14.43%, #82269e 85.2%);
+  border-radius: 16px;
+  padding: 12px 32px;
+  transition: 0.3s ease;
+  color: $white-light;
+  
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 17px 31px rgba(169, 80, 196, 0.18), 0px 5.125px 9.34559px rgba(169, 80, 196, 0.175929),
+      0px 2.12866px 3.88168px rgba(169, 80, 196, 0.135), 0px 0.769896px 1.40393px rgba(169, 80, 196, 0.094071);
+  }
+}
