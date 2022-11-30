@@ -17,28 +17,28 @@ $container-s: 540px;
     }
   }
 
-  @if $device == l {
+  @else if $device == l {
     // for resolutions between 1140px and 1440px
     @media screen and (max-width: $container-xl) and (min-width: $container-l) {
       @content;
     }
   }
 
-  @if $device == m {
+  @else if $device == m {
     // for resolutimons between 960px and 1140px
     @media screen and (max-width: $container-l) and (min-width: $container-m) {
       @content;
     }
   }
 
-  @if $device == s {
+  @else if $device == s {
     // for resolutimons minor than 960px
     @media screen and (max-width: $container-m) {
       @content;
     }
   }
 
-  @if $device == xs {
+  @else if $device == xs {
     // for resolutimons minor than 540px
     @media screen and (max-width: $container-s) {
       @content;
