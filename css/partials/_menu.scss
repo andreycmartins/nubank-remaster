@@ -6,7 +6,7 @@ header {
   transition: 0.3s ease;
 
   position: fixed;
-  z-index: 999;
+  z-index: 990;
 }
 .active-header {
   background: $white-normal;
@@ -142,8 +142,6 @@ header {
   width: 48px;
   height: 48px;
 
-  background-color: red;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,7 +167,7 @@ header {
 
   position: relative;
   cursor: pointer;
-  z-index: 999;
+  z-index: 990;
   transition: 0.7s;
 
   &::after {
@@ -203,10 +201,8 @@ header {
 
   position: relative;
   cursor: pointer;
-  z-index: 999;
+  z-index: 990;
   transition: 0.7s ease;
-
-  background-color: #fff;
 
   &::after {
     content: "";

@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/svg-inject.min.js  "></script>
     <title>Nubank Remaster</title>
   </head>
   <body>
@@ -18,14 +19,22 @@
       <!-- ===== NAVBAR MOBILE ===== -->
       <nav class="navbar-mobile">
         <div class="bx" id="bx"></div>
-        <div class="logo"></div>
+        <div class="logo">
+          <a href="#">
+            <img src="./svg/logonu.svg" onload="SVGInject(this)" alt="Logo Nubank" />
+          </a>
+        </div>
         <a href="">Login</a>
       </nav>
 
       <!-- ===== NAVBAR DESKTOP ===== -->
       <nav class="navbar-desktop">
         <div class="navbar-desktop-item-1">
-          <div class="logo"></div>
+          <div class="logo">
+            <a href="#">
+              <img src="./svg/logonu.svg" onload="SVGInject(this)" alt="Logo Nubank" />
+            </a>
+          </div>
           <ul class="menu-desktop">
             <li class="menu-item" id="menu-item-1">
               <a href="" class="nav-link-desktop">Nubank</a>
