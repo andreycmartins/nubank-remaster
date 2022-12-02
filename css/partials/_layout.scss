@@ -39,7 +39,7 @@ $container-s: 540px;
 }
 .container {
   max-width: $container-xl;
-  margin: 0 auto;
+  margin: 0 0 0 32px;
   padding: 96px 24px;
 
   display: flex;
@@ -113,10 +113,12 @@ $container-s: 540px;
 .hidden {
   overflow: hidden;
 }
-.hero{
+.display-none {
+  display: none;
+}
+.hero {
   height: 90vh;
 
-  @include responsive(s){
-    
+  @include responsive(s) {
   }
 }
