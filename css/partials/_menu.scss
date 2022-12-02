@@ -256,6 +256,22 @@ header {
 
   display: flex;
   flex-direction: column;
+
+  svg{
+    width: 36px;
+    height: 36px;
+    transition: 0.5s;
+
+    path{
+      transition: 0.7s;
+    }
+
+    &:hover{
+      path{
+        stroke: $primary-normal;
+      }
+    }
+  }
 }
 .nav-link-mobile {
   display: inline-block;

@@ -6,6 +6,104 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 96px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+  .container {
+    flex-direction: column;
+    padding: 32px 18px;
+  }
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-item-1 {
+  flex: 1 1 360px;
+}
+
+.flex-item-2 {
+  flex: 2 1 360px;
+}
+
+.flex-item-3 {
+  flex: 3 1 360px;
+}
+
+.flex-item-4 {
+  flex: 4 1 360px;
+}
+
+.flex-item-5 {
+  flex: 5 1 360px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.hero {
+  height: 90vh;
+}
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
@@ -141,6 +239,291 @@ a:hover {
 .btn:hover {
   transform: scale(1.02);
   box-shadow: 0px 17px 31px rgba(169, 80, 196, 0.18), 0px 5.125px 9.34559px rgba(169, 80, 196, 0.175929), 0px 2.12866px 3.88168px rgba(169, 80, 196, 0.135), 0px 0.769896px 1.40393px rgba(169, 80, 196, 0.094071);
+}
+
+.s-0 {
+  margin: 0;
+  padding: 0;
+}
+
+.m-1 {
+  margin: 8px;
+}
+
+.m-2 {
+  margin: 16px;
+}
+
+.m-3 {
+  margin: 48px;
+}
+
+.m-4 {
+  margin: 72px;
+}
+
+.m-5 {
+  margin: 128px;
+}
+
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.mt-3 {
+  margin-top: 48px;
+}
+
+.mt-4 {
+  margin-top: 72px;
+}
+
+.mt-5 {
+  margin-top: 128px;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 48px;
+}
+
+.mb-4 {
+  margin-bottom: 72px;
+}
+
+.mb-5 {
+  margin-bottom: 128px;
+}
+
+.ml-1 {
+  margin-left: 8px;
+}
+
+.ml-2 {
+  margin-left: 16px;
+}
+
+.ml-3 {
+  margin-left: 48px;
+}
+
+.ml-4 {
+  margin-left: 72px;
+}
+
+.ml-5 {
+  margin-left: 128px;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+
+.mr-2 {
+  margin-right: 16px;
+}
+
+.mr-3 {
+  margin-right: 48px;
+}
+
+.mr-4 {
+  margin-right: 72px;
+}
+
+.mr-5 {
+  margin-right: 128px;
+}
+
+.p-1 {
+  padding: 8px;
+}
+
+.p-2 {
+  padding: 16px;
+}
+
+.p-3 {
+  padding: 48px;
+}
+
+.p-4 {
+  padding: 72px;
+}
+
+.p-5 {
+  padding: 128px;
+}
+
+.pt-1 {
+  padding-top: 8px;
+}
+
+.pt-2 {
+  padding-top: 16px;
+}
+
+.pt-3 {
+  padding-top: 48px;
+}
+
+.pt-4 {
+  padding-top: 72px;
+}
+
+.pt-5 {
+  padding-top: 128px;
+}
+
+.pb-1 {
+  padding-bottom: 8px;
+}
+
+.pb-2 {
+  padding-bottom: 16px;
+}
+
+.pb-3 {
+  padding-bottom: 48px;
+}
+
+.pb-4 {
+  padding-bottom: 72px;
+}
+
+.pb-5 {
+  padding-bottom: 128px;
+}
+
+.pl-1 {
+  padding-left: 8px;
+}
+
+.pl-2 {
+  padding-left: 16px;
+}
+
+.pl-3 {
+  padding-left: 48px;
+}
+
+.pl-4 {
+  padding-left: 72px;
+}
+
+.pl-5 {
+  padding-left: 128px;
+}
+
+.pr-1 {
+  padding-right: 8px;
+}
+
+.pr-2 {
+  padding-right: 16px;
+}
+
+.pr-3 {
+  padding-right: 48px;
+}
+
+.pr-4 {
+  padding-right: 72px;
+}
+
+.pr-5 {
+  padding-right: 128px;
+}
+
+.mx-1 {
+  margin: 0 8px;
+}
+
+.mx-2 {
+  margin: 0 16px;
+}
+
+.mx-3 {
+  margin: 0 48px;
+}
+
+.mx-4 {
+  margin: 0 72px;
+}
+
+.mx-5 {
+  margin: 0 128px;
+}
+
+.my-1 {
+  margin: 8px 0;
+}
+
+.my-2 {
+  margin: 16px 0;
+}
+
+.my-3 {
+  margin: 48px 0;
+}
+
+.my-4 {
+  margin: 72px 0;
+}
+
+.my-5 {
+  margin: 128px 0;
+}
+
+.px-1 {
+  padding: 0 8px;
+}
+
+.px-2 {
+  padding: 0 16px;
+}
+
+.px-3 {
+  padding: 0 48px;
+}
+
+.px-4 {
+  padding: 0 72px;
+}
+
+.px-5 {
+  padding: 0 128px;
+}
+
+.py-1 {
+  padding: 8px 0;
+}
+
+.py-2 {
+  padding: 16px 0;
+}
+
+.py-3 {
+  padding: 48px 0;
+}
+
+.py-4 {
+  padding: 72px 0;
+}
+
+.py-5 {
+  padding: 128px 0;
 }
 
 html {
@@ -345,7 +728,6 @@ header {
   cursor: pointer;
   z-index: 990;
   transition: 0.7s ease;
-  background-color: #fff;
 }
 .active-bx::after {
   content: "";
@@ -391,6 +773,17 @@ header {
   list-style: none;
   display: flex;
   flex-direction: column;
+}
+.nav-list-mobile svg {
+  width: 36px;
+  height: 36px;
+  transition: 0.5s;
+}
+.nav-list-mobile svg path {
+  transition: 0.7s;
+}
+.nav-list-mobile svg:hover path {
+  stroke: #82269e;
 }
 
 .nav-link-mobile {
