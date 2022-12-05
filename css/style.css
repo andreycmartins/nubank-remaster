@@ -816,6 +816,10 @@ header {
   width: 100%;
 }
 
+.dropshadow {
+  filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)) drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)) drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)) drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+}
+
 .div-card {
   perspective: 500px;
   position: relative;
@@ -828,15 +832,16 @@ header {
   transform-origin: center center;
   transform-style: preserve-3d;
   background: red;
-  -webkit-animation: flip-card 12s linear infinite alternate;
-          animation: flip-card 12s linear infinite alternate;
+  z-index: -1;
+  -webkit-animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
+          animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
 }
 
 @-webkit-keyframes flip-card {
   0% {
     transform: rotateX(-10deg) rotateY(10deg);
   }
-  400% {
+  40% {
     transform: rotateX(0deg) rotateY(20deg);
   }
   60% {
@@ -851,7 +856,7 @@ header {
   0% {
     transform: rotateX(-10deg) rotateY(10deg);
   }
-  400% {
+  40% {
     transform: rotateX(0deg) rotateY(20deg);
   }
   60% {
@@ -859,5 +864,81 @@ header {
   }
   100% {
     transform: rotateX(190deg) rotateY(10deg);
+  }
+}
+@-webkit-keyframes change-bg-card {
+  0%, 49% {
+    background-image: url("../../svg/nubank.svg");
+    background-size: cover;
+  }
+  50%, 100% {
+    background-image: url("../../svg/nubank-verse.svg");
+    background-size: cover;
+  }
+}
+@keyframes change-bg-card {
+  0%, 49% {
+    background-image: url("../../svg/nubank.svg");
+    background-size: cover;
+  }
+  50%, 100% {
+    background-image: url("../../svg/nubank-verse.svg");
+    background-size: cover;
+  }
+}
+.icon-card-hero {
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  z-index: 200;
+  -webkit-animation: icons-hero 7s ease 0.5 infinite alternate;
+          animation: icons-hero 7s ease 0.5 infinite alternate;
+}
+
+.icon-contactless-hero {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+  z-index: 200;
+  -webkit-animation: icons-hero 7s ease 1s infinite alternate;
+          animation: icons-hero 7s ease 1s infinite alternate;
+}
+@media screen and (max-width: 960px) {
+  .icon-contactless-hero {
+    top: 320px;
+    left: 120px;
+  }
+}
+
+.icon-mobile-hero {
+  position: absolute;
+  top: 150px;
+  left: -250px;
+  z-index: 200;
+  -webkit-animation: icons-hero 7s ease 2.5 infinite alternate;
+          animation: icons-hero 7s ease 2.5 infinite alternate;
+}
+@media screen and (max-width: 960px) {
+  .icon-mobile-hero {
+    top: 350px;
+    left: -100px;
+  }
+}
+
+@-webkit-keyframes icons-hero {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}
+
+@keyframes icons-hero {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(10px, -40px, 0);
   }
 }/*# sourceMappingURL=style.css.map */
