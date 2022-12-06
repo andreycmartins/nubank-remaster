@@ -53,6 +53,9 @@ $container-s: 540px;
     padding: 32px 18px;
   }
 }
+.display-none {
+  display: none;
+}
 .flex-start {
   display: flex;
   justify-content: flex-start;
@@ -113,12 +116,27 @@ $container-s: 540px;
 .hidden {
   overflow: hidden;
 }
-.display-none {
-  display: none;
-}
+
+///HERO///
 .hero {
   height: 90vh;
 
   @include responsive(s) {
+    height: auto;
+  }
+}
+.bg-home{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  position: absolute;
+  z-index: -1;
+}
+.svg-bg-home{
+  width: 150%;
+
+  @include responsive(xp){
+    width: 100%;
   }
 }
