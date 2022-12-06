@@ -530,6 +530,10 @@ a:hover {
   padding: 128px 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -817,7 +821,7 @@ header {
 }
 
 .dropshadow {
-  filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)) drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)) drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)) drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.4));
 }
 
 .div-card {
